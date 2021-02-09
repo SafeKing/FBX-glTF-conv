@@ -30,7 +30,7 @@ void to_json(nlohmann::json &j_, const MaterialError<FinalError_> &error_) {
 /// </summary>
 class ShallNotBeTextureError : public MaterialError<ShallNotBeTextureError> {
 public:
-  constexpr static inline std::u8string_view code = u8"shall_not_be_texture";
+  constexpr static inline std::u8string_view code = u8"shall_not_be_textured";
 
   ShallNotBeTextureError(std::u8string_view material_name_,
                          std::u8string_view property_name_)
